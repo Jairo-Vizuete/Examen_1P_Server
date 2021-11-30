@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2021.11.29 a las 08:23:10 PM COT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://espe.edu.ec/arqsoftware/ExamenServer/ws">
+    <schemaBindings map="false">
+      <package name="ec.edu.espe.arqsoftware.examenserver.ws"/>
+    </schemaBindings>
+    <bindings scd="tns:buscarLocalidadPorDisponibilidadRequest">
+      <class ref="ec.edu.espe.arqsoftware.examenserver.ws.BuscarLocalidadPorDisponibilidadRequest"/>
+    </bindings>
+    <bindings scd="tns:buscarLocalidadPorDisponibilidadResponse">
+      <class ref="ec.edu.espe.arqsoftware.examenserver.ws.BuscarLocalidadPorDisponibilidadResponse"/>
+    </bindings>
+    <bindings scd="~tns:localidadPartido">
+      <class ref="ec.edu.espe.arqsoftware.examenserver.ws.LocalidadPartido"/>
+    </bindings>
+    <bindings scd="tns:crearCompraRequest">
+      <class ref="ec.edu.espe.arqsoftware.examenserver.ws.CrearCompraRequest"/>
+    </bindings>
+    <bindings scd="tns:crearCompraResponse">
+      <class ref="ec.edu.espe.arqsoftware.examenserver.ws.CrearCompraResponse"/>
+    </bindings>
+    <bindings scd="tns:obtenerPartidoFutbolPorFechaRequest">
+      <class ref="ec.edu.espe.arqsoftware.examenserver.ws.ObtenerPartidoFutbolPorFechaRequest"/>
+    </bindings>
+    <bindings scd="tns:obtenerPartidoFutbolPorFechaResponse">
+      <class ref="ec.edu.espe.arqsoftware.examenserver.ws.ObtenerPartidoFutbolPorFechaResponse"/>
+    </bindings>
+    <bindings scd="~tns:partidoFutbol">
+      <class ref="ec.edu.espe.arqsoftware.examenserver.ws.PartidoFutbol"/>
+    </bindings>
+  </bindings>
+</bindings>
+

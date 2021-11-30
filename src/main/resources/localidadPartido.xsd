@@ -1,0 +1,45 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://espe.edu.ec/arqsoftware/ExamenServer/ws"
+           targetNamespace="http://espe.edu.ec/arqsoftware/ExamenServer/ws" elementFormDefault="qualified">
+
+    <xs:element name="buscarLocalidadPorDisponibilidadRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="disponibilidad" type="xs:decimal"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="buscarLocalidadPorDisponibilidadResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="localidadPartido" type="tns:localidadPartido"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="crearCompraRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="localidadPartido" type="tns:localidadPartido"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="crearCompraResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="localidadPartido" type="tns:localidadPartido"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="localidadPartido">
+        <xs:sequence>
+            <xs:element name="codigo" type="xs:integer"/>
+            <xs:element name="codigoLocalidad" type="xs:string"/>
+            <xs:element name="disponibilidad" type="xs:decimal"/>
+            <xs:element name="precio" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

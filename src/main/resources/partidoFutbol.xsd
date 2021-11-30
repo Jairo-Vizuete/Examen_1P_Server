@@ -1,0 +1,30 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://espe.edu.ec/arqsoftware/ExamenServer/ws"
+           targetNamespace="http://espe.edu.ec/arqsoftware/ExamenServer/ws" elementFormDefault="qualified">
+
+    <xs:element name="obtenerPartidoFutbolPorFechaRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fecha" type="xs:date"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="obtenerPartidoFutbolPorFechaResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="partidoFutbol" type="tns:partidoFutbol"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="partidoFutbol">
+        <xs:sequence>
+            <xs:element name="codigo" type="xs:integer"/>
+            <xs:element name="equipoLocal" type="xs:string"/>
+            <xs:element name="equipoVisita" type="xs:string"/>
+            <xs:element name="fecha" type="xs:date"/>
+            <xs:element name="lugar" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
